@@ -20,4 +20,4 @@ def remove_parentheses(text):
             x = False
             chuj = True
             
-    return text2:
+    return text2
