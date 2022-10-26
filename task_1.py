@@ -19,4 +19,7 @@ def remove_parentheses(text):
         if text[i] == ")" :
             x = False
             chuj = True
+
+    text=text2
+
             
