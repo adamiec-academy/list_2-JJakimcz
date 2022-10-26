@@ -21,5 +21,3 @@ def remove_parentheses(text):
 
         if text[i] == ")" :
             x = False
-
-remove_parentheses(text)
