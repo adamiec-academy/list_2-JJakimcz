@@ -7,6 +7,7 @@ def remove_parentheses(text):
     for i in range(len(text)):
 
         if chuj==True and text[i]==" ":
+            chuj=False
             continue
 
         if text[i] == "(" :
