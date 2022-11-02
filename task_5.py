@@ -12,22 +12,19 @@ def cipher(text, shift):
                 x = ((ord(letter)) + shift) - 65
                 x=91-abs(x)
                 result+=chr(x)
+            
+            else:
+                result+=(chr(ord(letter) + shift))
                 
         elif letter==" ":
             result+=" "
             
-            else:
-                result+=(chr(ord(letter) + shift))
-
         else: # liczby małe
             if (ord(letter) + shift)>122:
                 x = ((ord(letter)) + shift) - 122
                 x=96+x
                 result+=chr(x)
                 
-        elif letter==" ":
-            result+=" "
-            
             elif (ord(letter)+shift)<97:
                 x = ((ord(letter)) + shift) - 97
                 x=123-abs(x)
@@ -54,7 +51,10 @@ def decipher(text, shift):
 
             else:
                 result+=(chr(ord(letter) - shift))
-
+                
+        elif letter==" ":
+            result+=" "
+            
         else: # liczby małe
             if (ord(letter) - shift)>122:
                 x = ((ord(letter)) - shift) - 122
