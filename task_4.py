@@ -8,7 +8,7 @@ def multiplication_table(x1, x2, y1, y2):
         print(f"{y : {max_spaces}}",end="")
     
     print("")
-    print("−" * (max_spaces+1) * y2 ,end="")
+    print("-" * ((max_spaces * abs(y2-y1)) + max_spaces+abs(y2-y1))   ,end="")
 
     for x in range( x1, (x2-2) + x1):
  
