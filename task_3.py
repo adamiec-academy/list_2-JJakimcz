@@ -12,7 +12,7 @@ def is_prime(n):
 d=0
 
 for i in range(100000):
-    if is_prime(i) and if is_diabolic(i):
+    if is_prime(i) and is_diabolic(i):
         print(i)
         d+=1
 print (d)
