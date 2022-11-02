@@ -1,5 +1,5 @@
 def is_diabolic(n):
-    "666" in str(n):
+    return "666" in str(n)
 
 def is_prime(n):
     if n<2:
